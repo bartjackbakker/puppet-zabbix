@@ -124,7 +124,7 @@ class zabbix::repo (
           repos    => 'main',
           release  => $releasename,
           pin      => $pinpriority,
-          architecture   => ['amd64'],
+          architecture   => 'amd64',
           require  => [
             Apt_key['zabbix-FBABD5F'],
             Apt_key['zabbix-A1848F5'],
